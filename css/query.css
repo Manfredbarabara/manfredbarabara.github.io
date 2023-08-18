@@ -1,0 +1,1310 @@
+
+/*------------------------------------------------------------(MEDIA 280PX-320PX)-----------------------------------*/
+@media (min-width:280px) and (max-width:320px){
+    body{
+        font-size: smaller;
+    }
+    .hamburger{
+        display: block;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       .footer-logo{
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .social-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }    
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        background-color: var(--div-color);
+        top: 55px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        gap: 5px;
+        left: -100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    /*-------------------------------------------------HOME PAGE MAX 320PX-------------------------------*/
+    .navbar{
+        min-height: 55px;
+    }
+    .brand{
+        .logo{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .mode{
+        height: 30px;
+        width: 60px;
+
+        .toggle-switch{
+            display: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+      
+    }
+    .mode-text{
+        display: flex;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        .one{
+            font-size: 20px;
+        }
+        .two{
+            font-size: 40px;
+        }
+        .three{
+            font-size: 20px;
+        }
+    }
+
+    .btn-list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .more{
+        width: 120px;
+        height: 40px;
+    }
+    
+    /*------------------------------------------------ABOUT PAGE MAX 320PX-----------------------------*/
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+    }
+    .about-intro{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        min-width: 270px;
+        min-height: 600px;
+        margin-bottom: 30px;
+
+        .about-image{
+            display: none;
+
+            .my-picture{
+                display: none;
+            }
+        }
+
+        .about-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 260px;
+            min-height: 600px;
+        }
+    }
+
+    .about-details{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .edu-info{
+            min-width: 250px;
+            min-height: 450px;
+            align-items: center;
+            justify-content: center;
+
+            .education{
+                width: 85.494px;
+                height: 60px;
+            }
+        }
+
+        .exp-info{
+            min-width: 250px;
+            min-height: 450px;
+            align-items: center;
+            justify-content: center;
+
+            .experience{
+                width: 44.124px;
+                height: 60px;
+            }
+        }
+
+        .qua-info{
+            min-width: 250px;
+            min-height: 450px;
+            align-items: center;
+            justify-content: center;
+
+            .qualifications{
+                width: 61.9771px;
+                height: 60px;
+            }
+        }
+    }
+    .samples-hire{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /*-----------------------------------------------------SERVICES PAGE MAX 319PX-------------------------------------*/
+    .services-pack{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+
+        .task-pack1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .task{
+                min-width: 260px;
+                min-height: 750px;
+
+                .dev{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .task{
+                min-width: 260px;
+                min-height: 750px;
+
+                .web-design{
+                    width: 75px;
+                    height: 50px;
+                }
+            }
+        }
+        .task-pack2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            .task {
+                min-width: 260px;
+                min-height: 750px;
+
+                .graphics{
+                    width: 57.165px;
+                    height: 50px;
+                }
+            }
+
+            .task{
+                min-width: 260px;
+                min-height: 750px;
+
+                .brand{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+        .head{
+            font-size: 17px;
+        }
+    }
+
+
+    /*--------------------------------------------------SKILLS PAGE MAX 319PX------------------------------*/
+    .softwares{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+
+        .software-list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .adobe{
+                min-width: 260px;
+                min-height: 60px;
+            }
+        }    
+    }
+
+    .languages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+
+          .language-list{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+
+              .tools{
+               min-width: 260px;
+               min-height: 60px;
+            }
+        }
+    }
+
+/*------------------------------------------------------CONTACT PAGE MAX 319PX-----------------------------------*/
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    .contact-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+
+        .fb{
+            border-top: 1px solid var(--highlight-color);
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 300px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--highlight-color);
+        }
+    }
+}
+
+/*--------------------------------------------------HIRE PAGE MAX 319PX--------------------------------------------*/
+.content-hire{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    .hire-reason{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 25%;
+        min-width: 250px;
+        min-height: 300px;
+        padding: 20px 10px;
+        background-color: var(--div-color);
+        box-shadow: 2px 2px 4px 4px var(--nav-color);
+    }
+}
+.hire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+}
+
+
+/*------------------------------------------------------------(MEDIA 320PX-480PX)-----------------------------------*/
+@media (min-width:321px) and (max-width:480px){
+    body{
+        font-size: small;
+    }
+    .hamburger{
+        display: block;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       .footer-logo{
+            height: 70px;
+            width: 70px;
+        }
+    }
+    .social-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }    
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        background-color: var(--div-color);
+        top: 75px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        gap: 15px;
+        left: -100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    /*-------------------------------------------------HOME PAGE MAX 480PX-------------------------------*/
+    .navbar{
+        min-height: 75px;
+    }
+    .brand{
+        .logo{
+            width: 70px;
+            height: 70px;
+        }
+    }
+    .mode{
+        height: 40px;
+        width: 80px;
+    }
+    .mode-text{
+        display: none;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        .one{
+            font-size: 20px;
+        }
+        .two{
+            font-size: 40px;
+        }
+        .three{
+            font-size: 20px;
+        }
+    }
+
+    .more{
+        min-width: 120px;
+        min-height: 60px;
+    }
+    /*------------------------------------------------ABOUT PAGE MAX 480PX-----------------------------*/
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .about-intro{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        min-width: 320px;
+        min-height: 550px;
+
+        .about-image{
+            display: none;
+
+            .my-picture{
+                display: none;
+            }
+        }
+
+        .about-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 300px;
+            min-height: 550px;
+        }
+    }
+
+    .about-details{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .edu-info{
+            min-width: 320px;
+            min-height: 400px;
+            align-items: center;
+            justify-content: center;
+
+            .education{
+                height: 70px;
+                width: 99.743px;
+            }
+        }
+
+        .exp-info{
+            min-width: 320px;
+            min-height: 400px;
+            align-items: center;
+            justify-content: center;
+
+            .experience{
+                height: 70px;
+                width: 51.478px;
+            }
+        }
+
+        .qua-info{
+            min-width: 320px;
+            min-height: 400px;
+            align-items: center;
+            justify-content: center;
+
+            .qualifications{
+                height: 70px;
+                width: 72.3066px;
+            }
+        }
+    }
+    .samples-hire{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*-----------------------------------------------------SERVICES PAGE MAX 480PX-------------------------------------*/
+    .services-pack{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+
+        .task-pack1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .dev{
+                width: 60px;
+                height: 60px;
+            }
+            .web-design{
+                width: 90px;
+                height: 60px;
+            }
+        }
+        .task-pack2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .graphics{
+                width: 68.598px;
+                height: 60px;
+            }
+            .brand{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+
+    /*--------------------------------------------------SKILLS PAGE MAX 480PX------------------------------*/
+    .softwares{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+
+        .software-list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .adobe{
+                min-width: 300px;
+                min-height: 60px;
+            }
+        }    
+    }
+
+    .languages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+          .language-list{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+
+              .tools{
+               min-width: 300px;
+               min-height: 60px;
+            }
+        }
+    }
+
+/*------------------------------------------------------CONTACT PAGE MAX 480PX-----------------------------------*/
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    .contact-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+
+        .fb{
+            border-top: 1px solid var(--highlight-color);
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 300px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--highlight-color);
+        }
+    }
+}
+
+/*------------------------------------------------------HIRE PAGE MAX 480PX--------------------------------------*/
+.content-hire{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    .hire-reason{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 25%;
+        min-width: 300px;
+        min-height: 200px;
+        padding: 20px 10px;
+        background-color: var(--div-color);
+        box-shadow: 2px 2px 4px 4px var(--nav-color);
+    }
+}
+.hire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+}
+
+
+/*------------------------------------------------------------(MEDIA 481PX-768PX)---------------------------------------*/
+@media (min-width:481px) and (max-width:768px){
+    body{
+        font-size: medium;
+    }
+    .hamburger{
+        display: block;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       .footer-logo{
+            height: 80px;
+            width: 80px;
+        }
+    }
+    .social-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }    
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        background-color: var(--div-color);
+        top: 90px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        gap: 5px;
+        left: -100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+
+    /*-------------------------------------------------HOME PAGE MAX 768PX-------------------------------*/
+    .navbar{
+        min-height: 95px;
+    }
+    .brand{
+        .logo{
+            width: 90px;
+            height: 90px;
+        }
+    }
+    .mode{
+        height: 40px;
+        width: 80px;
+    }
+    .mode-text{
+        display: none;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+        .intro-image{
+            width: 40%;
+
+            .portfolio-image{
+                width: 100%;
+            }
+        }
+        .one{
+            font-size: 20px;
+        }
+        .two{
+            font-size: 40px;
+        }
+        .three{
+            font-size: 20px;
+        }
+    }
+    .more{
+        min-width: 120px;
+        min-height: 60px;
+    }
+    /*------------------------------------------------ABOUT PAGE-768PX-----------------------------*/
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .about-intro{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        min-width: 480px;
+        min-height: 780px;
+
+        .about-image{
+            display: flex;
+
+            .my-picture{
+                display: flex;
+            }
+        }
+
+        .about-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 480px;
+            min-height: 360px;
+        }
+    }
+
+    .about-details{
+        display: flex;
+        flex-direction: column;
+
+        .edu-info{
+            min-width: 450px;
+            min-height: 400px;
+            align-items: center;
+            justify-content: center;
+
+            .education{
+                height: 70px;
+                width: 99.743px;
+            }
+        }
+
+        .exp-info{
+            min-width: 450px;
+            min-height: 400px;
+            align-items: center;
+            justify-content: center;
+
+            .experience{
+                height: 70px;
+                width: 51.478px;
+            }
+        }
+
+        .qua-info{
+            min-width: 450px;
+            min-height: 400px;
+            align-items: center;
+            justify-content: center;
+
+            .qualifications{
+                height: 70px;
+                width: 72.3066px;
+            }
+        }
+    }
+    .samples-hire{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    /*-----------------------------------------------------SERVICES PAGE MAX 768PX-------------------------------------*/
+    .services-pack{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+
+        .task-pack1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .task{
+                min-width: 420px;
+                min-height: 600px;
+            }
+
+            .dev{
+                width: 70px;
+                height: 70px;
+            }
+            .web-design{
+                width: 105px;
+                height: 70px;
+            }
+        }
+        .task-pack2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .task{
+                min-width: 420px;
+                min-height: 600px;
+            }
+
+            .graphics{
+                width: 80.031px;
+                height: 70px;
+            }
+            .brand{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+
+    /*--------------------------------------------------SKILLS PAGE MAX 768PX------------------------------*/
+    .softwares{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+
+        .software-list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .adobe{
+                min-width: 450px;
+                min-height: 90px;
+            }
+        }    
+    }
+
+    .languages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+          .language-list{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+
+              .tools{
+               min-width: 450px;
+               min-height: 90px;
+            }
+        }
+    }
+
+/*------------------------------------------------------CONTACT PAGE MAX 768PX-----------------------------------*/
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    .contact-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+
+        .fb{
+            border-top: 1px solid var(--highlight-color);
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 450px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--highlight-color);
+        }
+    }
+}
+}
+
+
+
+/*------------------------------------------------------------(MEDIA 769PX-1024PX)---------------------------------------*/
+@media (min-width:769px) and (max-width:1024px){
+    body{
+        font-size: large;
+    
+    .foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       .footer-logo{
+            height: 100px;
+            width: 100px;
+        }
+    }
+    .social-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }    
+    
+    /*-------------------------------------------------HOME PAGE MAX 1024PX-------------------------------------*/
+    .navbar{
+        min-height: 110px;
+    }
+    .brand{
+        .logo{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .mode{
+        min-height: 50px;
+        min-width: 100px;
+    }
+    .mode-text{
+        display: flex;
+    }
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+
+        .intro-image{
+            width: 40%;
+
+            .portfolio-image{
+                width: 100%;
+            }
+
+        }
+    }
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        .one{
+            font-size: 20px;
+        }
+        .two{
+            font-size: 40px;
+        }
+        .three{
+            font-size: 20px;
+        }
+    }
+    .more{
+        min-width: 120px;
+        min-height: 60px;
+    }
+    /*------------------------------------------------ABOUT PAGE-1024PX-----------------------------*/
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .about-intro{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        min-width: 480px;
+        min-height: 780px;
+        margin-bottom: 10px;
+
+        .about-image{
+            display: flex;
+
+            .my-picture{
+                display: flex;
+
+            }
+        }
+
+        .about-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 480px;
+            min-height: 360px;
+        }
+    }
+
+    .about-details{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+
+        .edu-info{
+            min-width: 250px;
+            min-height: 750px;
+        }
+
+        .exp-info{
+            min-width: 250px;
+            min-height: 750px;
+        }
+
+        .qua-info{
+            min-width: 250px;
+            min-height: 750px;
+        }
+
+        .samples-hire{
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+    }
+
+    /*-----------------------------------------------------SERVICES PAGE MAX 1024PX-------------------------------------*/
+    .services-pack{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+
+        .task-pack1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .task{
+                min-width: 360px;
+                min-height: 720px;
+            }
+        }
+        .task-pack2{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .task{
+                min-width: 360px;
+                min-height: 720px;
+            }
+        }
+    }
+
+    /*--------------------------------------------------SKILLS PAGE MAX 1024PX------------------------------*/
+    .softwares{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+
+        .software-list{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .adobe{
+                min-width: 360px;
+                min-height: 72px;
+            }
+        }    
+    }
+
+    .languages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+          .language-list{
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: center;
+           flex-wrap: wrap;
+
+              .tools{
+               min-width: 300px;
+               min-height: 60px;
+            }
+        }
+    }
+
+/*------------------------------------------------------CONTACT PAGE MAX 1024PX-----------------------------------*/
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    .contact-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 100px;
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 200px;
+            padding: 10px 0;
+        }
+    }
+}
+    }
+}
+
+
+
+
